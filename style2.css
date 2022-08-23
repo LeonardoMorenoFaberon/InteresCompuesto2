@@ -56,8 +56,9 @@ body{
     flex-direction: column;
     margin-top: 3rem;
     border: 1px solid black;
+    border-radius: 20px;
     margin: 3rem auto 3rem auto;
-    width: 70%;
+    /* width: 70%; */
     text-align: center;
 }
 
@@ -66,12 +67,13 @@ body{
     margin-top: 1%;
     display: block;
     color: white;
-    padding-left: 5%;
     font-size: 3rem;
+    border-radius: 20rem;
+    
 }
 .mostrador{
     /* border: 2px solid red; */
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 .motrador-titulo{
