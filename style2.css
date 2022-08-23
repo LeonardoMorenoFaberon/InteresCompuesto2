@@ -1,0 +1,58 @@
+body{
+    background-color: bisque;
+    font-size: 3rem ;
+}
+
+.autor{
+    margin: 0;
+    text-align: center;
+}
+.titulo{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    /* font-size: 0.5rem; */
+}
+.label_input{
+    display: flex;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 50%;
+}
+.screen{
+    background-color: black;
+    margin-top: 1%;
+    display: block;
+    color: white;
+}
+.mostrador{
+    border: 2px solid red;
+}
+.motrador-titulo{
+    font-size: 1.5rem;
+}
+.entry{
+    display: flex;
+    height: fit-content;
+}
+.InputsStyle{
+    width: 80%;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.label_input{
+    background-color: brown;
+}
+.InputsStyle-input{
+    width: 50%;
+}
+input{
+    font-size: 3rem;
+    
+}
+.aside{
+    display: block;
+    border:1px solid red;
+}
