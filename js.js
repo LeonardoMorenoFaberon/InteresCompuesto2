@@ -13,7 +13,7 @@ let valorCalculatorScreen;
 
 function intSimple(monto , interesGanado , veces){
     let porcentaje  = interesGanado/100 ;
-    return monto * Math.pow(1 + porcentaje ,  veces);    
+    return monto * Math.pow(1 + porcentaje ,  veces).toFixed(4);    
 }
 //..........................................................
 function intCompuesto(monto , interesGanado , veces){
@@ -22,7 +22,7 @@ function intCompuesto(monto , interesGanado , veces){
     for(let i = 1 ; i<=veces ; i++){
        acumulador += intSimple(monto , interesGanado , i);
     }
-    return acumulador;
+    return acumulador.toFixed(4);
 }
 //..........................................................
 

@@ -4,7 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <header>
@@ -12,26 +13,34 @@
     </header>
     <main class="aside"> 
         <h3 class="titulo">Calculadora de Interes Compuesto</h3>
-        <h6>by Leonardo Moreno Faberón</h6>
+        <h6 class="autor">by Leonardo Moreno Faberón</h6>
+
         <div class="InputsStyle">
-            <label class="label_input" for="monto" id="lbmonto">Monto
-                <input type="number" name="monto" id="idmonto">
-            </label>
-            <label class="label_input" for="interes" id="lbinteres">Interes por transacción
-                <input type="number" name="interes" id="idinteres">
-            </label>
-            <label class="label_input" for="veces" id="lbveces">Veces
-                <input type="number" name="veces" id="idveces">
-            </label>
+            <div class="entry">
+                <label class="label_input" for="monto" id="lbmonto">Monto
+                </label>
+                <input class="InputsStyle-input" type="number" name="monto" id="idmonto">
+            </div>
+            <div class="entry">
+                <label class="label_input" for="interes" id="lbinteres">Interes por transacción
+                </label>
+                <input class="InputsStyle-input" type="number" name="interes" id="idinteres">
+            </div>
+            
+            <div class="entry">
+                <label class="label_input" for="veces" id="lbveces">Veces
+                </label>
+                <input class="InputsStyle-input" type="number" name="veces" id="idveces">
+            </div>
         </div>
         
         <div class="mostrador">
-            <label for="">Interes Compuesto</label>
+            <label class="motrador-titulo" for="">Interes Compuesto</label>
             <label for="calculatorScreen1" class="screen" id="calculatorScreen1"></label>
         </div>
 
         <div class="mostrador">
-            <label for="">Interes Simple</label>
+            <label class="motrador-titulo" for="">Interes Simple</label>
             <label for="calculatorScreen2" class="screen" id="calculatorScreen2" ></label>
         </div>
     </main>
