@@ -1,9 +1,9 @@
 
-let idmonto     =  document.getElementById('idmonto');
-let idinteres   =  document.getElementById('idinteres');
-let idveces     =  document.getElementById('idveces'); 
-let idcalculatorScreen1 = document.getElementById('calculatorScreen1');
-let idcalculatorScreen2 = document.getElementById('calculatorScreen2');
+const idmonto     =  document.getElementById('idmonto');
+const idinteres   =  document.getElementById('idinteres');
+const idveces     =  document.getElementById('idveces'); 
+const idcalculatorScreen1 = document.getElementById('calculatorScreen1');
+const idcalculatorScreen2 = document.getElementById('calculatorScreen2');
 
 let monto   ; 
 let interes ;  
@@ -13,7 +13,10 @@ let valorCalculatorScreen;
 
 function intSimple(monto , interesGanado , veces){
     let porcentaje  = interesGanado/100 ;
-    return monto * Math.pow(1 + porcentaje ,  veces).toFixed(4);    
+    let devolver = monto * Math.pow(1 + porcentaje ,  veces).toFixed(4);
+    // return formatoMexico(  );
+    return monto * Math.pow(1 + porcentaje ,  veces).toFixed(4);
+    // return formatoMexico(devolver);     
 }
 //..........................................................
 function intCompuesto(monto , interesGanado , veces){
@@ -38,8 +41,6 @@ function capturandoValor(){
     
         if(!isNaN(monto) & !isNaN(interes) & !isNaN(veces)){
             valorAcumulado =  intCompuesto(monto , interes , veces );
-            // console.log(    valorAcumulado*5/100/12    )
-            imprimirConsola(valorAcumulado);
             showIncalculatorScreens();           
         }else{
             console.log("aun no es un numero")
@@ -49,7 +50,14 @@ function capturandoValor(){
 function imprimirConsola(valor){
     console.log(valor)
 }
+//......................................
+function trio(valor , n){
+    console.log(valor[valor.length-n] + '' + 
+                valor[valor.length-(n-1)] + ''+
+                valor[valor.length-(n-2)])
+}
 
+//......................................
 function showIncalculatorScreens(){
     idcalculatorScreen1.innerText = valorAcumulado;
     idcalculatorScreen2.innerText = intSimple(monto , interes , veces);;

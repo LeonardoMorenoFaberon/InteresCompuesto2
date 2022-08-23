@@ -1,10 +1,21 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: bisque;
-    font-size: 3rem ;
+    font-size: 1.5rem ;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.aside{
+    display: block;
+    border:1px solid red;
 }
 
 .autor{
-    margin: 0;
+    margin: .8rem;
     text-align: center;
 }
 .titulo{
@@ -13,22 +24,55 @@ body{
     margin-bottom: 0;
     /* font-size: 0.5rem; */
 }
+
+.InputsStyle{
+    width: 70%;
+    margin: 0 auto;
+}
+
 .label_input{
+    background-color: brown;
     display: flex;
-    background-color: beige;
     border: 1px solid black;
     border-radius: 5px;
     justify-content: space-between;
     width: 50%;
+    color: beige;
+    font-weight: bold;
+    padding: 5% 3%;
+    
 }
+.InputsStyle-input{
+    font-size: 3rem;
+    width: 50%;
+    border-radius: 5%;
+}
+
+
+/* ............................................... */
+
+.shower{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    border: 1px solid black;
+    margin: 3rem auto 3rem auto;
+    width: 70%;
+    text-align: center;
+}
+
 .screen{
     background-color: black;
     margin-top: 1%;
     display: block;
     color: white;
+    padding-left: 5%;
+    font-size: 3rem;
 }
 .mostrador{
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: 0 auto;
 }
 .motrador-titulo{
     font-size: 1.5rem;
@@ -37,22 +81,4 @@ body{
     display: flex;
     height: fit-content;
 }
-.InputsStyle{
-    width: 80%;
-    border: 1px solid red;
-    margin: 0 auto;
-}
-.label_input{
-    background-color: brown;
-}
-.InputsStyle-input{
-    width: 50%;
-}
-input{
-    font-size: 3rem;
-    
-}
-.aside{
-    display: block;
-    border:1px solid red;
-}
+
