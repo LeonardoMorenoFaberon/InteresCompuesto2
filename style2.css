@@ -35,7 +35,7 @@ body{
     background-color: brown;
     display: flex;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 1rem;
     justify-content: space-between;
     width: 50%;
     color: beige;
@@ -62,6 +62,10 @@ body{
     margin: 3rem auto 3rem auto;
     /* width: 70%; */
     text-align: center;
+}
+
+.oculto{
+    visibility: hidden;
 }
 
 .screen{

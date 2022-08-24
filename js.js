@@ -4,6 +4,7 @@ const idinteres   =  document.getElementById('idinteres');
 const idveces     =  document.getElementById('idveces'); 
 const idcalculatorScreen1 = document.getElementById('calculatorScreen1');
 const idcalculatorScreen2 = document.getElementById('calculatorScreen2');
+const shower    = document.getElementById('idShower')
 
 let monto   ; 
 let interes ;  
@@ -63,5 +64,6 @@ function trio(valor , n){
 function showIncalculatorScreens(){
     idcalculatorScreen1.innerText = Intl.NumberFormat('de-DE', { style: 'currency', currency: 'SOL' }).format(valorAcumulado);;
     idcalculatorScreen2.innerText = Intl.NumberFormat('de-DE', { style: 'currency', currency: 'SOL' }).format(intSimple(monto , interes , veces));
+    shower.classList.remove('oculto');
 }
 // console.log(    intCompuesto(100 , 3 , 120)*5/100/12    )
