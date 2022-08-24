@@ -57,9 +57,11 @@ function trio(valor , n){
                 valor[valor.length-(n-2)])
 }
 
+// Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(number);
+
 //......................................
 function showIncalculatorScreens(){
-    idcalculatorScreen1.innerText = valorAcumulado;
-    idcalculatorScreen2.innerText = intSimple(monto , interes , veces);;
+    idcalculatorScreen1.innerText = Intl.NumberFormat('de-DE', { style: 'currency', currency: 'SOL' }).format(valorAcumulado);;
+    idcalculatorScreen2.innerText = Intl.NumberFormat('de-DE', { style: 'currency', currency: 'SOL' }).format(intSimple(monto , interes , veces));
 }
 // console.log(    intCompuesto(100 , 3 , 120)*5/100/12    )
