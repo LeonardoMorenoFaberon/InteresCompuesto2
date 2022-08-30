@@ -75,7 +75,8 @@ li{
 }
 
 .oculto{
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
 }
 
 .screen{
@@ -102,3 +103,7 @@ li{
     height: fit-content;
 }
 
+#canvas{
+    border: 1px solid red;
+    box-sizing: content-box;
+}
