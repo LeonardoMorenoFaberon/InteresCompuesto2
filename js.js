@@ -36,9 +36,9 @@ idveces.addEventListener(   "change" , capturandoValor);
 
 //......................................
 function capturandoValor(){
-    monto = parseInt(idmonto.value);     //si casilla esta vacio es NaN 
-    interes = parseInt(idinteres.value); //si casilla esta vacio es NaN
-    veces   = parseInt(idveces.value);   //si casilla esta vacio es NaN
+    monto   = parseFloat(idmonto.value);     //si casilla esta vacio es NaN 
+    interes = parseFloat(idinteres.value);   //si casilla esta vacio es NaN
+    veces   = parseFloat(idveces.value);     //si casilla esta vacio es NaN
     
         if(!isNaN(monto) & !isNaN(interes) & !isNaN(veces)){
             valorAcumulado =  intCompuesto(monto , interes , veces );
